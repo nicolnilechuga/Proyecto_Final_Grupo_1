@@ -96,13 +96,16 @@ def ExportarDatos():
 def menu():
     #Muestra el menú principal del programa.
     while True:
-        print("\n--- Menú Principal ---")
-        print("1. Mostrar productos")
-        print("2. Agregar producto")
-        print("3. Actualizar producto")
-        print("4. Eliminar producto")
-        print("5. Exportar datos")
-        print("6. Salir")
+         print("=" + "=" * 28 + "=")
+        print("||   ** Menú Principal **   ||")
+        print("=" + "=" * 28 + "=")
+        print("||* 1. Mostrar productos    ||")
+        print("||* 2. Agregar producto     ||")
+        print("||* 3. Actualizar producto  ||")
+        print("||* 4. Eliminar producto    ||")
+        print("||* 5. Exportar datos       ||")
+        print("||* 6. Salir                ||")
+        print("=" + "=" * 28 + "=") 
         try:
 
          opcion = input("Seleccione una opción: ").strip()
