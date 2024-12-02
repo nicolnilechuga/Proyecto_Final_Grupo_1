@@ -10,10 +10,10 @@ def MostrarProductos():
     print("\nProductos en el almacén:")
     print("-" * 55)
     print(f"{'ID':<10}{'Nombre':<20}{'Categoría':<15}{'Cantidad':<10}{'Precio':<10}")
-    print("-" * 55)
+    print("-" * 65)
     for producto in almacen:
         print(f"{producto['id']:<10}{producto['nombre']:<20}{producto['categoria']:<15}{producto['cantidad']:<10}{producto['precio']:<10.2f}")
-    print("-" * 55)
+    print("-" * 65)
 
 def AgregarProducto():
     # Permite al usuario agregar un nuevo producto al almacén.
@@ -96,13 +96,15 @@ def ExportarDatos():
 def menu():
     #Muestra el menú principal del programa.
     while True:
-        print("\n--- Menú Principal ---")
-        print("1. Mostrar productos")
-        print("2. Agregar producto")
-        print("3. Actualizar producto")
-        print("4. Eliminar producto")
-        print("5. Exportar datos")
-        print("6. Salir")
+         print("-" + "-" * 28 + "-")
+        print("||    ** Menú Principal **    ||")
+        print("-" + "-" * 28 + "-")
+        print("||* 1. Mostrar productos      ||")
+        print("||* 2. Agregar producto       ||")
+        print("||* 3. Actualizar producto    ||")
+        print("||* 4. Eliminar producto      ||")
+        print("||* 5. Exportar datos         ||")
+        print("||* 6. Salir                  ||")
         try:
 
          opcion = input("Seleccione una opción: ").strip()
